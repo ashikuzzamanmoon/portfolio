@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React, { useState } from "react";
 import Experience from "./Experience";
 import Education from "./Education";
@@ -41,7 +41,7 @@ const About = () => {
         <div className="container">
           <div className="text-center mx-auto xl:mb-[60px] md:mb-[50px] mb-[30px]">
             <img
-              src={"/img/about/section-star.png"}
+              src={"/img/about/section-star1.png"}
               className="mb-[30px] animate-spin mx-auto"
               alt="star"
               data-aos="fade-up"
@@ -52,9 +52,9 @@ const About = () => {
               data-aos="fade-up"
               data-aos-duration="1500"
             >
-              I'm David Matias, I'm a Brand & Webflow Designer, Currently
-              residing in the lush Victoria Street London, Matias operates
-              globally and is ready to take on any design challenge.
+              I'm Ashikuzzaman Moon, a Full-Stack Web Developer with expertise in
+              MERN, Next.js, and TypeScript, dedicated to solving complex
+              challenges through high-performing applications.
             </p>
           </div>
           <div>
@@ -83,7 +83,6 @@ const About = () => {
           </div>
         </div>
       </section>
-      {/* <Awards /> */}
     </>
   );
 };

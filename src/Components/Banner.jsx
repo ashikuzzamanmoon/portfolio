@@ -63,9 +63,9 @@ const Banner = () => {
                 </span>
               </Link>
               <h1 className="lg:text-[116px] md:text-[68px] sm:text-[48px] text-[34px] font-semibold sm:mb-[50px] mb-[30px] leading-[120%]">
-                <span className="text-clr_white"> Creative Visual</span>
-                <span className="block designers" data-text="Designer">
-                  Designer
+                <span className="text-clr_white"> Full-Stack</span>
+                <span className="block designers" data-text="Developer">
+                  Developer
                 </span>
               </h1>
               <div className="flex items-center gap-6">
@@ -95,7 +95,7 @@ const Banner = () => {
           <Link href={"#"}>
             <img src={"/img/banner/dial.png"} alt="img" className="-rotate-90 w-4" />
           </Link>
-          <Link href={"#"} className="text-clr_white">(+02)-574-328-301</Link>
+          <Link href={"tel:+8801712714334"} className="text-clr_white">+88 01712714334</Link>
         </div>
         <div className="flex items-center justify-center gap-[50px] rotate-90 mb-[0px]">
           <Link href={"#"} className="scroll text-clr_pra uppercase text-[15px]">
