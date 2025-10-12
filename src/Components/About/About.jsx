@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import Experience from "./Experience";
 import Education from "./Education";
-import Skills from "./Skills";
 import AboutMe from "./AboutMe";
 
 const tabList = [
@@ -20,11 +19,6 @@ const tabList = [
     id: 3,
     name: "Education",
     value: "education",
-  },
-  {
-    id: 4,
-    name: "Skills",
-    value: "skills",
   },
 ];
 
@@ -78,7 +72,6 @@ const About = () => {
               <AboutMe isTabActive={isTabActive} />
               <Experience isTabActive={isTabActive} />
               <Education isTabActive={isTabActive} />
-              <Skills isTabActive={isTabActive} />
             </div>
           </div>
         </div>

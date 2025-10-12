@@ -19,11 +19,11 @@ const AboutCard = ({ title, para, info }) => {
               {info.map(({date, instition, position}, index) => {
                 return (
                   <div key={index} className="flex items-center justify-between border-t border-t-clr_cusborder py-6 duration-500 last:border-y last:border-b-clr_cusborder hover:border-clr_hover">
-                    <span className="md:text-lg text-base font-medium text-clr_base">
+                    <span className="md:text-lg text-base font-medium text-clr_base flex-shrink-0 w-[90px] md:w-fit break-words">
                       {date}
                     </span>
                     <div>
-                      <h4 className="mb-[15px] text-white font-semibold md:text-2xl text-lg leading-[130px]">
+                      <h4 className="mb-[15px] text-white font-semibold md:text-2xl text-lg">
                         {instition}
                       </h4>
                       <p className="md:text-lg text-base text-clr_pra d-block">

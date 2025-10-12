@@ -3,27 +3,33 @@ import AboutCard from "./AboutCard";
 
 const Education = ({ isTabActive }) => {
   return (
-    <div className={`w-full duration-700 ${isTabActive === "education" ? "z-10 opacity-100 translate-y-0" : "translate-y-20 -z-10 opacity-0 absolute  top-0 "} `}>
+    <div
+      className={`w-full duration-700 ${
+        isTabActive === "education"
+          ? "z-10 opacity-100 translate-y-0"
+          : "translate-y-20 -z-10 opacity-0 absolute  top-0 "
+      } `}
+    >
       <AboutCard
         title={"My Education"}
         para={
-          "Neque porro quisquam est, qui dolorem ipsum quia dolor sit consectetur, aliquam quaerats voluptatem. Ut enim ad minima veniam, exercitationem laboriosam, nisi ut aliquid ex ea autem velit esse quam nihil"
+          "My academic background includes a Bachelor of Technology in Computer Science and Engineering, which has provided a strong theoretical and practical foundation for my career in web development."
         }
         info={[
           {
-            date: "2011-2013",
-            position: "Programming Course",
-            instition: " New York University",
+            date: "2020 - 2024",
+            position: "B.Tech in Computer Science",
+            instition: "Haldia Institute of Technology, India",
           },
           {
-            date: "2013-2016",
-            position: "Kingston, United States",
-            instition: "University Of Design",
+            date: "2017 - 2019",
+            position: "Higher Secondary (H.S.C)",
+            instition: "Govt. Azizul Haque College, Bogura",
           },
           {
-            date: "2016-2019",
-            position: "New York University",
-            instition: "Web Design Course",
+            date: "Passed in 2017",
+            position: "Secondary School (S.S.C)",
+            instition: "Beripotol Polashbari High School, Sirajganj",
           },
         ]}
       />
