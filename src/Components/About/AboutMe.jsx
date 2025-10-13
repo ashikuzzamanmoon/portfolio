@@ -43,22 +43,22 @@ const contactInfo = [
       },
       {
         id: 3,
-        link: "https://ashikuzzaman-moon.vercel.app/",
+        link: "#",
         icon: <Globe />,
       },
       {
         id: 4,
-        link: "#", // এখানে আপনার ফেসবুক লিঙ্ক দিন
+        link: "https://www.facebook.com/ashikuzzaman.moon1/", 
         icon: <Facebook />,
       },
       {
         id: 5,
-        link: "#", // এখানে আপনার টুইটার লিঙ্ক দিন
+        link: "https://x.com/ashikmoon01",
         icon: <Twitter />,
       },
       {
         id: 6,
-        link: "#", // এখানে আপনার ইন্সটাগ্রাম লিঙ্ক দিন
+        link: "https://www.instagram.com/ashikuzzaman.moon1/",
         icon: <Instagram />,
       },
     ],

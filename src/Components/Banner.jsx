@@ -1,24 +1,24 @@
 'use client'
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { Facebook, Twitter, Linkedin, Globe, Instagram, PlayFill, ArrowUpRight } from "react-bootstrap-icons";
+import { Facebook, Twitter, Linkedin, Globe, PlayFill, ArrowUpRight, Github } from "react-bootstrap-icons";
 import VideoPlay from "./Shared/VideoPlay";
 
 const socalIcon = [
   {
     id: 1,
-    link:"#",
-    icon: <Facebook />,
+    link:"https://github.com/ashikuzzamanmoon",
+    icon: <Github />,
   },
   {
     id: 2,
-    link:"#",
-    icon: <Twitter />,
+    link:"https://www.linkedin.com/in/ashikuzzaman-moon",
+    icon: <Linkedin />,
   },
   {
     id: 3,
-    link:"#",
-    icon: <Linkedin />,
+    link:"https://www.facebook.com/ashikuzzaman.moon1",
+    icon: <Facebook />,
   },
   {
     id: 4,
@@ -27,8 +27,8 @@ const socalIcon = [
   },
   {
     id: 5,
-    link:"#",
-    icon: <Instagram />,
+    link:"https://x.com/ashikmoon01",
+    icon: <Twitter />,
   },
 ];
 const Banner = () => {
@@ -120,7 +120,7 @@ const Banner = () => {
             {socalIcon.map(({ icon, id, link }) => {
               return (
                 <li key={id} >
-                  <Link href={link} className="lg:w-[46px] lg:h-[46px] h-[38px] w-[38xp] rounded-full bg-[rgb(18_18_18)] flex justify-center items-center" >
+                  <Link href={link} target="_blank" className="lg:w-[46px] lg:h-[46px] h-[38px] w-[38xp] rounded-full bg-[rgb(18_18_18)] flex justify-center items-center" >
                     <i className="text-white">{icon}</i>
                   </Link>
                 </li>

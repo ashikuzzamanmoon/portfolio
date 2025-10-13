@@ -35,7 +35,7 @@ const About = () => {
         <div className="container">
           <div className="text-center mx-auto xl:mb-[60px] md:mb-[50px] mb-[30px]">
             <img
-              src={"/img/about/section-star1.png"}
+              src={"/img/about/section-star.png"}
               className="mb-[30px] animate-spin mx-auto"
               alt="star"
               data-aos="fade-up"

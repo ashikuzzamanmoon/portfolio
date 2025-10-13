@@ -19,8 +19,8 @@ const Projects = () => {
     <section className="pt_120 pb_120" id="projects">
       <div className="container">
         <Title
-          mainTitle={"Look at my portfolio and give me your feedback"}
-          sortTitle={"Complete Project"}
+          mainTitle={"Explore My Latest Projects"}
+          sortTitle={"My Portfolio"}
         />
 
         <div

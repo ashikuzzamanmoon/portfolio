@@ -23,28 +23,26 @@ const Drawer = ({ isSidebarActive, setIsSidebarActive }) => {
           <img src={"/img/logo/logo.png"} alt="img" />
         </Link>
         <p className="text-sm mb-10 text-clr_pra break-words leading-normal">
-          Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-          consectetur, aliquam quaerats voluptatem. Ut enim ad minima veniam,
-          exercitationem laboriosam, nisi ut aliquid ex ea autem velit esse quam
-          nihil
+          Full-Stack Web Developer with proven experience building dynamic web applications
+          using the MERN stack, Next.js, and TypeScript to deliver high-value solutions.
         </p>
         <div className="grid gap-6 mb-10">
           <div>
             <div>
               <span className="block mb-2 uppercase text-clr_pra font-bold text-sm"> address </span>
-              <span className="textp capitalize text-white font-medium leading-[120%]"> Victoria Street London, </span>
+              <span className="textp capitalize text-white font-medium leading-[120%]"> Sirajganj, Bangladesh </span>
             </div>
           </div>
           <div>
             <div>
               <span className="block mb-2 uppercase text-clr_pra font-bold text-sm"> email </span>
-              <Link href={"#"} className="textp capitalize text-white font-medium leading-[120%]"> matias999@.com </Link>
+              <Link href={"mailto:ashikuzzamanmoon31@gmail.com"} className="textp text-white font-medium leading-[120%]"> ashikuzzamanmoon31@gmail.com </Link>
             </div>
           </div>
           <div>
             <div>
               <span className="block mb-2 uppercase text-clr_pra font-bold text-sm"> call now </span>
-              <Link href={"#"} className="textp capitalize text-white font-medium leading-[120%]"> +98 4758 2154 021 </Link>
+              <Link href={"tel:+8801712714334"} className="textp capitalize text-white font-medium leading-[120%]"> +88 01712714334 </Link>
             </div>
           </div>
         </div>
@@ -63,8 +61,8 @@ const Drawer = ({ isSidebarActive, setIsSidebarActive }) => {
           </ul>
         </div>
         <Link
-          href={"#"}
-          className="flex justify-center items-center gap-2 font-medium px-[30px] pt-5 pb-[21px] text-lg leading-[120%]  capitalize relative bg-clr_base overflow-hidden rounded-[5px] duration-500 text-clr_subtitle before:absolute before:content-[''] before:bottom-full before:bg-[#aad302] before:left-0 before:w-full before:h-full before:duration-500 before:bg-opacity-80 hover:before:bottom-0"
+          href={"/contact"}
+          className="flex justify-center items-center gap-2 font-medium px-[30px] pt-5 pb-[21px] text-lg leading-[120%]  capitalize relative bg-clr_base overflow-hidden rounded-[5px] duration-500 text-clr_subtitle before:absolute before:content-[''] before:bottom-full before:bg-[#107a37] before:left-0 before:w-full before:h-full before:duration-500 before:bg-opacity-80 hover:before:bottom-0"
         >
           <span className="z-10 relative duration-500">
             <i>
