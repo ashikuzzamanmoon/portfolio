@@ -5,32 +5,32 @@ import WorkProcessCard from "./WorkProcessCard";
 const processList = [
   {
     id: 1,
-    title: "Concept",
-    info: "Nemo enim ipsam voluptatem voluptas sit aspernatur aut odit aut fugit",
+    title: "Discovery",
+    info: "We begin by deeply understanding your vision. This phase involves strategic planning and creating an intuitive, user-centric design.",
     list: [
-      "Reviewing any existing branding",
-      "Target audience and competitors research",
-      "Developing a strategy",
+      "Requirement Analysis & Strategy",
+      "Wireframing & UI/UX Design (Figma)",
+      "Interactive Prototyping",
     ],
   },
   {
     id: 2,
-    title: "Design",
-    info: "Nemo enim ipsam voluptatem voluptas sit aspernatur aut odit aut fugit",
+    title: "Development",
+    info: "I bring the designs to life by writing clean, scalable, and robust code for both the front-end and back-end of your application.",
     list: [
-      "Developing wireframes and mockup",
-      "Choosing typography, color palettes,",
-      "Refining the design",
+      "Full-Stack Coding (MERN/Next.js)",
+      "API Development & Integration",
+      "Database Architecture",
     ],
   },
   {
     id: 3,
-    title: "Webflow",
-    info: "Nemo enim ipsam voluptatem voluptas sit aspernatur aut odit aut fugit",
+    title: "Testing & Launch",
+    info: "Rigorous testing ensures a flawless user experience. After quality assurance, your project is deployed to a live environment.",
     list: [
-      "Testing the website thoroughly launch",
-      "Choosing typography, color palettes,",
-      "Refining the design",
+      "Quality Assurance & Bug Fixing",
+      "Performance Optimization",
+      "Deployment & Go-Live Support",
     ],
   },
 ];
@@ -39,7 +39,7 @@ const WorkeProcess = () => {
     <section className="bg-common_bg bg-center bg-no-repeat bg-cover rounded-[10px] overflow-hidden sm:p-[60px] py-[30px] px-[10px] pt_120 pb_120">
       <div className="container">
         <Title
-          mainTitle="Your Dream Website In Just Few Steps"
+          mainTitle="Turning Your Vision into Reality With My Proven Workflow"
           sortTitle="Working Process"
         />
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-7">

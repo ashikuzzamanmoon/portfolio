@@ -34,7 +34,7 @@ const Projects = () => {
               subHeading={subHeading}
               openLightbox={openLightbox}
               index={index}
-              navigate="/portfolio"
+              navigate={`/portfolio-details/${id}`}
             />
           ))}
         </div>

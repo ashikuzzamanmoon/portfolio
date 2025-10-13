@@ -33,7 +33,7 @@ const RelatedProducts = () => {
                                 subHeading={subHeading}
                                 openLightbox={openLightbox}
                                 index={index}
-                                navigate={"#"}
+                                navigate={`/portfolio-details/${id}`}
                             />
                         ))}
                 </div>
