@@ -21,6 +21,7 @@ const Blogs = () => {
                   .map(({ id, date, image, heading }, index) => (
                     <Blog
                       key={id}
+                      id={id}
                       date={date}
                       image={image}
                       heading={heading}

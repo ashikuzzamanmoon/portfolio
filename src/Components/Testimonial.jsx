@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React from "react";
 import Partner from "./Partner";
 import Rating from "./Shared/Rating";
@@ -9,50 +9,33 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-
-
 const reviewList = [
   {
     id: 1,
-    name: "Shawn Beltran",
-    position: "Business Owner",
-    review: `There are many variations of passages of Lorem Ipsum
-    available, by injected humour, or randomised words which
-    don't look even slightly believable. If you are going to
-    use a passage of Lorem Ipsum, you need to be hidden in
-    middle of text. All the Lorem Ipsum generators`,
+    name: "Rahman Chowdhury",
+    position: "Project Manager, Tech Innovators Ltd.",
+    review: `Working with Ashikuzzaman was a fantastic experience. He's a highly skilled developer who brought our complex ideas to life with clean code and a great attitude. His ability to handle both front-end and back-end tasks made our project run incredibly smoothly.`,
     stars: 5,
   },
   {
     id: 2,
-    name: "John Methcel",
-    position: "Business Owner",
-    review: `There are many variations of passages of Lorem Ipsum
-    available, by injected humour, or randomised words which
-    don't look even slightly believable. If you are going to
-    use a passage of Lorem Ipsum, you need to be hidden in
-    middle of text. All the Lorem Ipsum generators`,
+    name: "Fahim Rahman",
+    position: "Founder, Sheba Startup",
+    review: `Ashikuzzaman is a true professional. He not only built a beautiful and fast website for my startup but also provided valuable insights that improved the overall user experience. I was impressed by his dedication and communication throughout the project.`,
     stars: 4.5,
   },
   {
     id: 3,
-    name: "Nethon Jr",
-    position: "Business Owner",
-    review: `There are many variations of passages of Lorem Ipsum
-    available, by injected humour, or randomised words which
-    don't look even slightly believable. If you are going to
-    use a passage of Lorem Ipsum, you need to be hidden in
-    middle of text. All the Lorem Ipsum generators`,
+    name: "Anisul Haque",
+    position: "Head of Engineering, Digital Solutions BD",
+    review: `We hired Ashikuzzaman to develop a critical feature for our platform, and he delivered beyond our expectations. His expertise in the MERN stack is top-notch. I would highly recommend him for any full-stack development work.`,
     stars: 4,
   },
 ];
 
 const Testimonial = () => {
   return (
-    <section
-      className="overflow-hidden pt_120 pb_120"
-      id="testimonial"
-    >
+    <section className="overflow-hidden pt_120 pb_120" id="testimonial">
       <div className="container">
         <div className="text-center md:mb-[60px] sm:mb-[50px] mb-[45px] max-w-[920px] mx-auto">
           <span
@@ -69,7 +52,7 @@ const Testimonial = () => {
             data-aos="fade-down"
             data-aos-duration="1000"
           >
-            Happy Words From Happy Customer
+            Happy Words From Happy Clients
           </h2>
         </div>
         <div
@@ -126,19 +109,31 @@ const Testimonial = () => {
             <img src={"/img/testimonial/quote.png"} alt="img" />
           </div>
           <div className="absolute top-5 left-5 opacity-10 lg:opacity-100 w-[60px] sm:w-auto">
-            <img src={"/img/testimonial/man1.png"} alt="img" className="w-full sm:w-auto" />
+            <img
+              src={"/img/testimonial/man1.png"}
+              alt="img"
+              className="w-full sm:w-auto"
+            />
           </div>
           <div className="absolute left-5 bottom-5 opacity-10 lg:opacity-100 w-[60px] sm:w-auto">
-            <img src={"/img/testimonial/man3.png"} alt="img" className="w-full sm:w-auto" />
+            <img
+              src={"/img/testimonial/man3.png"}
+              alt="img"
+              className="w-full sm:w-auto"
+            />
           </div>
           <div className="absolute top-5 right-5 opacity-10 lg:opacity-100 w-[60px] sm:w-auto">
-            <img src={"/img/testimonial/man2.png"} alt="img" className="w-full sm:w-auto" />
+            <img
+              src={"/img/testimonial/man2.png"}
+              alt="img"
+              className="w-full sm:w-auto"
+            />
           </div>
           <div className="absolute lg:bottom-[50px] lg:right-[50px] bottom-[15px] right-[15px] sm:block hidden ">
             <img src={"/img/testimonial/testi-arrow.png"} alt="img" />
           </div>
         </div>
-        <Partner />
+        {/* <Partner /> */}
       </div>
     </section>
   );

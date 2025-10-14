@@ -1,38 +1,80 @@
 export const blogsList = [
-  {
-    id: 1,
-    image: "/img/blog/bblog1.png",
-    date: "October 19, 2025",
-    heading: " Brand design that helps the company grow",
-    para: `There are many variations of passages of Lorem Ipsum
-      available, but the majority have suffered alteration in
-      some form, by injected humour, or randomised words`,
-  },
-  {
-    id: 2,
-    image: "/img/blog/bblog2.png",
-    date: "October 19, 2025",
-    heading: "   Fresh design ideas & inspiration for 2025",
-    para: `There are many variations of passages of Lorem Ipsum
-      available, but the majority have suffered alteration in
-      some form, by injected humour, or randomised words`,
-  },
-  {
-    id: 3,
-    image: "/img/blog/bblog3.png",
-    date: "October 19, 2025",
-    heading: "   Fresh design ideas & inspiration for 2025",
-    para: `There are many variations of passages of Lorem Ipsum
-      available, but the majority have suffered alteration in
-      some form, by injected humour, or randomised words`,
-  },
-  {
-    id: 4,
-    image: "/img/blog/bblog4.png",
-    date: "October 19, 2025",
-    heading: "   Brand design that helps the company grow",
-    para: `There are many variations of passages of Lorem Ipsum
-      available, but the majority have suffered alteration in
-      some form, by injected humour, or randomised words`,
-  },
+    {
+      id: 1,
+      image: "/img/blog/why-nextjs.png",
+      date: "October 14, 2025",
+      heading: "Why Next.js is the Future of Web Development",
+      para: `Next.js offers a powerful set of features like Server-Side Rendering and Static Site Generation that are crucial for modern web applications.`,
+      details: {
+        author: "Ashikuzzaman Moon",
+        category: "Web Development",
+        commentsCount: 0,
+        mainImage: "/img/blog/why-nextjs.png",
+        content_p1: "In the ever-evolving landscape of web development, Next.js has emerged as a front-runner, providing a robust framework for building React applications. Its hybrid approach to rendering allows developers to choose between Server-Side Rendering (SSR) and Static Site Generation (SSG) on a per-page basis, leading to highly optimized, SEO-friendly, and fast-loading websites.",
+        content_p2: "Furthermore, features like file-based routing, API routes, and built-in image optimization simplify the development process, allowing developers to focus more on building features rather than configuring tools. It's a production-ready framework that scales from small personal projects to large enterprise applications.",
+        quote: "The ability to ship less JavaScript to the client is a huge win for performance, and Next.js excels at this.",
+        quoteAuthor: "A Web Performance Expert",
+        subheading: "Key Features That Make a Difference",
+        subImage: "/img/blog/nextjs-2.png",
+        bulletPoints: [
+            "Server-Side Rendering for dynamic content and improved SEO.",
+            "Static Site Generation for blazing-fast static pages.",
+            "Built-in API routes for creating backend endpoints effortlessly.",
+            "Automatic code splitting and image optimization.",
+        ],
+        tags: ["Next.js", "React", "Web Development"],
+      }
+    },
+    {
+      id: 2,
+      image: "/img/blog/bblog2.png",
+      date: "September 28, 2025",
+      heading: "Mastering State Management with Redux Toolkit",
+      para: `Redux Toolkit simplifies the process of writing Redux logic, making state management more efficient and predictable.`,
+      details: {
+        author: "Ashikuzzaman Moon",
+        category: "Frontend",
+        commentsCount: 0,
+        mainImage: "/img/blog/bblog2.png",
+        content_p1: "State management can be one of the most complex aspects of building a large-scale React application. While Redux has been a popular solution, its boilerplate code can be cumbersome. Redux Toolkit (RTK) was created to solve this problem by providing a simpler, more opinionated API.",
+        content_p2: "RTK's `configureStore` and `createSlice` functions drastically reduce boilerplate. `createSlice` automatically generates action creators and action types, allowing you to write more concise and readable code. It also includes powerful tools like RTK Query for data fetching and caching.",
+        quote: "Redux Toolkit is the official, recommended way to write Redux logic. It's a must-have for any serious React developer.",
+        quoteAuthor: "React Core Team Member",
+        subheading: "Benefits of Using Redux Toolkit",
+        subImage: "/img/blog/blog-detailsb2.png", // Replace with another image if you have one
+        bulletPoints: [
+            "Significant reduction in boilerplate code.",
+            "Simplified store setup and reducer logic.",
+            "Built-in support for asynchronous logic with `createAsyncThunk`.",
+            "Powerful data fetching and caching with RTK Query.",
+        ],
+        tags: ["Redux", "React", "Frontend"],
+      }
+    },
+    {
+      id: 3,
+      image: "/img/blog/bblog3.png",
+      date: "September 15, 2025",
+      heading: "Building Secure APIs with Node.js and JWT",
+      para: `JSON Web Tokens (JWT) are a standard for creating access tokens that assert some number of claims. Let's see how to use them.`,
+      details: {
+        author: "Ashikuzzaman Moon",
+        category: "Backend",
+        commentsCount: 0,
+        mainImage: "/img/blog/bblog3.png",
+        content_p1: "Securing your API is a critical step in application development. One of the most popular methods for handling authentication and authorization is using JSON Web Tokens (JWT). A JWT is a compact, URL-safe means of representing claims to be transferred between two parties.",
+        content_p2: "In a Node.js and Express.js application, implementing JWT is straightforward. When a user logs in, the server generates a token containing user information (like their ID and role) and sends it back to the client. The client then includes this token in the authorization header of subsequent requests to access protected routes.",
+        quote: "Stateless authentication with JWT simplifies scaling your application, as you don't need to store session information on the server.",
+        quoteAuthor: "A Security Architect",
+        subheading: "Implementation Steps",
+        subImage: "/img/blog/blog-detailsb2.png",
+        bulletPoints: [
+            "User logs in with credentials.",
+            "Server verifies credentials and generates a signed JWT.",
+            "Server sends the JWT back to the client.",
+            "Client stores the JWT and sends it with every request to protected routes.",
+        ],
+        tags: ["Node.js", "JWT", "Backend"],
+      }
+    },
 ];

@@ -15,7 +15,7 @@ const Service = ({ heading, subHeading, para, id }) => {
           <div>
             <h5 className="text-base lg:text-xl font-semibold text-white mb-2">{subHeading}</h5>
             <h2 className="text-[26px] xl:text-[40px] lg:text-3xl font-semibold lg:leading-[120%]">
-              <Link href={"/service-details"} className="text-white duration-500">
+              <Link href={`/service-details/${id}`} className="text-white duration-500">
                 {" "}
                 {heading}{" "}
               </Link>
@@ -26,7 +26,7 @@ const Service = ({ heading, subHeading, para, id }) => {
       </div>
 
       <Link
-        href={"/service-details"}
+        href={`/service-details/${id}`}
         className="h-[45px] w-[45px] sm:w-[60px] sm:h-[60px] rounded-md bg-[#1D1D1D] flex justify-center items-center duration-500 group-hover:bg-clr_base cursor-pointer"
       >
         <ArrowUpRight className="duration-500 group-hover:text-clr_title text-lg sm:text-xl text-white " />

@@ -3,8 +3,9 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { Eye } from "react-bootstrap-icons";
 import Lightbox from "../Shared/LightBox";
+import { blogsList } from "@/Utlits/blogList";
 
-const Blog = ({ date, heading, image, index }) => {
+const Blog = ({ id, date, heading, image, index }) => {
   const [currentId, setCurrentId] = useState(0);
   const [lightboxOpen, setLightboxOpen] = useState(false);
 
@@ -28,7 +29,7 @@ const Blog = ({ date, heading, image, index }) => {
               </span>
               <h3 className="xl:text-3xl sm:text-[22px] text-xl text-white sm:leading-[44px] leading-8 font-semibold capitalize">
                 <Link
-                  href={"/blog-details"}
+                  href={`/blog-details/${id}`}
                   className="text-white duration-500 group-hover:text-clr_base"
                 >
                   {heading}
@@ -45,13 +46,13 @@ const Blog = ({ date, heading, image, index }) => {
             />
           </div>
         </div>
-        <div className="w-[60px] h-[60px] flex justify-center items-center bg-none rounded-full border border-white duration-500 group-hover:border-clr_base">
+        <Link href={`/blog-details/${id}`} className="w-[60px] h-[60px] min-w-[60px] flex justify-center items-center bg-none rounded-full border border-white duration-500 group-hover:border-clr_base">
           <Eye className="text-white duration-500 group-hover:text-clr_base" />
-        </div>
+        </Link>
       </div>
       {lightboxOpen && (
         <Lightbox
-          images={["/img/blog/bblog1.png", "/img/blog/bblog2.png", "/img/blog/bblog3.png", "/img/blog/bblog4.png"]}
+          images={blogsList.map(blog => blog.image)}
           setLightboxOpen={setLightboxOpen}
           currentId={currentId}
         />
