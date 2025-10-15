@@ -20,6 +20,7 @@ const AllBlogs = () => {
                 {blogsList.map(({ id, heading, image, para, date }) => (
                   <BlogCard
                     key={id}
+                    id={id}
                     date={date}
                     heading={heading}
                     image={image}

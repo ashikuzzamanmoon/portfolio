@@ -48,10 +48,10 @@ const Drawer = ({ isSidebarActive, setIsSidebarActive }) => {
         </div>
         <div className="lg:mb-20 mb-14 relative">
           <ul className="flex gap-[14px]">
-            {socialIcons.map(({ icon, id }) => (
+            {socialIcons.map(({ icon, id, link }) => (
               <li key={id}>
                 <Link
-                  href={"#"}
+                  href={link} target="_blank"
                   className="w-[45px] h-[45px] rounded-full bg-clr_base border border-clr_base  flex justify-center items-center "
                 >
                   <i className="text-clr_title">{icon}</i>

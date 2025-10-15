@@ -20,8 +20,10 @@ const Price = ({ image, planName, price, time, fetcher, id }) => {
         <h4 className="text-white lg:mb-6 mb-4 text-2xl font-semibold">
           {planName}
         </h4>
-        <h2 className="lg:mb-10 lg:pb-10 mb-7 pb-7 flex text-6xl border-b border-b-clr_cusborder  text-white font-bold">
-          {price}
+        <h2 className="lg:mb-10 lg:pb-10 mb-7 pb-7 flex text-4xl border-b border-b-clr_cusborder  text-white font-bold">
+          <span className="text-xl self-end leading-[2.2] font-medium">
+            From
+          </span>{price}
           <span className="text-xl self-end leading-[2.2] font-medium">
             /{time}
           </span>
@@ -45,10 +47,10 @@ const Price = ({ image, planName, price, time, fetcher, id }) => {
           ))}
         </ul>
         <Link
-          href={""}
+          href={"/contact"}
           className={`flex items-center justify-center gap-2 w-full  ${
             id === 2 ? "bg-clr_mtitle" : " bg-clr_base"
-          } py-[30px] pt-5 pb-[21px] font-medium text-lg leading-[120%] overflow-hidden capitalize relative rounded-[5px] duration-500  before:absolute before:content-[''] before:bottom-full before:bg-[#aad302] before:left-0 before:w-full before:h-full before:duration-500 before:bg-opacity-80 hover:before:bottom-0`}
+          } py-[30px] pt-5 pb-[21px] font-medium text-lg leading-[120%] overflow-hidden capitalize relative rounded-[5px] duration-500  before:absolute before:content-[''] before:bottom-full before:bg-[#107a37] before:left-0 before:w-full before:h-full before:duration-500 before:bg-opacity-80 hover:before:bottom-0`}
         >
           <span
             className={` ${

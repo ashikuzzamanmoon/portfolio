@@ -1,7 +1,7 @@
 'use client'
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { Facebook, Twitter, Linkedin, Globe, PlayFill, ArrowUpRight, Github } from "react-bootstrap-icons";
+import { Facebook, Twitter, Linkedin, Globe, PlayFill, ArrowUpRight, Github, BriefcaseFill } from "react-bootstrap-icons";
 import VideoPlay from "./Shared/VideoPlay";
 
 const socalIcon = [
@@ -41,12 +41,19 @@ const Banner = () => {
     }
   }, []);
 
-  const openLightbox = () => {
-    setLightboxOpen(true);
+  // const openLightbox = () => {
+  //   setLightboxOpen(true);
+  // };
+
+   const handleScrollToProjects = () => {
+    const projectsSection = document.getElementById("projects");
+    if (projectsSection) {
+      projectsSection.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
-    <section id="home">
+    <section id="home" className="relative">
       <div className="container">
         <div className="grid md:grid-cols-[70%_auto] gap-5">
           <div>
@@ -70,12 +77,12 @@ const Banner = () => {
               </h1>
               <div className="flex items-center gap-6">
                 <img src={"/img/banner/bn-arrow.png"} alt="img" />
-                <div onClick={openLightbox} className="cursor-pointer relative xl:w-20 xl:h-20 sm:w-[60px] sm:h-[60px] w-[50px] h-[50px] flex justify-center items-center rounded-full border border-clr_white before:absolute before:border-2 before:border-clr_white before:w-full before:h-full before:content:[''] before:rounded-full before:animate-scales  ">
+                <div onClick={handleScrollToProjects} className="cursor-pointer relative xl:w-20 xl:h-20 sm:w-[60px] sm:h-[60px] w-[50px] h-[50px] flex justify-center items-center rounded-full border border-clr_white before:absolute before:border-2 before:border-clr_white before:w-full before:h-full before:content:[''] before:rounded-full before:animate-scales  ">
                   <i className="text-clr_white sm:text-[42px] text-[30px]">
-                    <PlayFill />
+                    <BriefcaseFill />
                   </i>
                 </div>
-                <span className="sm:text-xl text-base text-clr_white w-[67px]">Work Process</span>
+                <span className="sm:text-xl text-base text-clr_white w-[67px]">My Work</span>
               </div>
             </div>
           </div>
@@ -129,12 +136,12 @@ const Banner = () => {
           </ul>
         </div>
       </div>
-      {lightboxOpen && (
+      {/* {lightboxOpen && (
         <VideoPlay
           setLightboxOpen={setLightboxOpen}
           url="https://www.youtube.com/embed/tgbNymZ7vqY"
         />
-      )}
+      )} */}
     </section>
   );
 };

@@ -29,7 +29,7 @@ export const menuList = [
             },
             {
                 id: 2,
-                path: "/service-details",
+                path: "/service-details/01",
                 name: "Service Details",
             },
         ],
@@ -53,7 +53,7 @@ export const menuList = [
             },
             {
                 id: 2,
-                path: "/blog-details",
+                path: "/blog-details/1",
                 name: "Blog Details",
             },
         ],
