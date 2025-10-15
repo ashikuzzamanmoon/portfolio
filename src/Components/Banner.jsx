@@ -115,12 +115,12 @@ const Banner = () => {
       </div>
       <div className="hidden absolute right-0 top-[55%] -translate-y-1/2 xl:grid gap-[150px]  ">
         <div className="flex items-center justify-center gap-[50px] rotate-90">
-          <Link href={"#"} className="scroll text-clr_pra uppercase text-[15px]">
+          <span className="scroll text-clr_pra uppercase text-[15px]">
             Follow Me
-          </Link>
-          <Link href={"#"} className="-rotate-90">
+          </span>
+          <span className="-rotate-90">
             <img src={"/img/banner/scroll-down.png"} alt="img" className="w-5" />
-          </Link>
+          </span>
         </div>
         <div>
           <ul className="grid justify-center lg:gap-[14px] gap-[10px]">
