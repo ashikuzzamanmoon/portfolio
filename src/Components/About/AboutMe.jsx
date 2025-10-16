@@ -43,12 +43,12 @@ const contactInfo = [
       },
       {
         id: 3,
-        link: "#",
+        link: "https://moon-bd.vercel.app",
         icon: <Globe />,
       },
       {
         id: 4,
-        link: "https://www.facebook.com/ashikuzzaman.moon1/", 
+        link: "https://www.facebook.com/ashikuzzaman.moon1/",
         icon: <Facebook />,
       },
       {
@@ -106,49 +106,51 @@ const AboutMe = ({ isTabActive }) => {
               </p>
               <div className="mt-10">
                 <div className="grid xl:grid-cols-2 lg:grid-cols-1 md:grid-cols-2 grid-cols-1 justify-between  gap-6">
-                  {contactInfo.map(({ id, contact, socalContact, system, link }) => {
-                    return (
-                      <div key={id} className="" data-aos="zoom-in">
-                        <div className="rounded-[10px] bg-[#1D1D1D] p-[35px] border border-[#1D1D1D] duration-500 hover:border-clr_base">
-                          <div>
-                            <span className="text-clr_pra fz-18 md:text-lg text-base mb-5 block">
-                              {system}
-                            </span>
-                            {contact &&
-                              (link ? (
-                                <Link
-                                  href={link}
-                                  target="_blank"
-                                  className="text-xl text-clr_white break-all"
-                                >
-                                  {contact}
-                                </Link>
-                              ) : (
-                                <span className="text-xl text-clr_white break-all">
-                                  {contact}
-                                </span>
-                              ))}
-
-                            {socalContact && (
-                              <ul className="flex items-center xl:gap-4 gap-2 ">
-                                {socalContact.map((info) => (
-                                  <li key={info.id}>
-                                    <Link
-                                      href={info.link}
-                                      target="_blank"
-                                      className="text-clr_white text-xl"
-                                    >
-                                      {info.icon}
-                                    </Link>
-                                  </li>
+                  {contactInfo.map(
+                    ({ id, contact, socalContact, system, link }) => {
+                      return (
+                        <div key={id} className="" data-aos="zoom-in">
+                          <div className="rounded-[10px] bg-[#1D1D1D] p-[35px] border border-[#1D1D1D] duration-500 hover:border-clr_base">
+                            <div>
+                              <span className="text-clr_pra fz-18 md:text-lg text-base mb-5 block">
+                                {system}
+                              </span>
+                              {contact &&
+                                (link ? (
+                                  <Link
+                                    href={link}
+                                    target="_blank"
+                                    className="text-xl text-clr_white break-all"
+                                  >
+                                    {contact}
+                                  </Link>
+                                ) : (
+                                  <span className="text-xl text-clr_white break-all">
+                                    {contact}
+                                  </span>
                                 ))}
-                              </ul>
-                            )}
+
+                              {socalContact && (
+                                <ul className="flex items-center xl:gap-4 gap-2 ">
+                                  {socalContact.map((info) => (
+                                    <li key={info.id}>
+                                      <Link
+                                        href={info.link}
+                                        target="_blank"
+                                        className="text-clr_white text-xl"
+                                      >
+                                        {info.icon}
+                                      </Link>
+                                    </li>
+                                  ))}
+                                </ul>
+                              )}
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    );
-                  })}
+                      );
+                    }
+                  )}
                 </div>
               </div>
             </div>

@@ -19,7 +19,7 @@ const planData = [
   },
   {
     id: 2,
-    planName: "Ultra Plan",
+    planName: "Standard Plan",
     price: "৳15,000",
     time: "per project",
     fetcher: [
@@ -33,11 +33,11 @@ const planData = [
   },
   {
     id: 3,
-    planName: "Gold Plan",
+    planName: "Premium Plan",
     price: "৳20,000",
     time: "per project",
     fetcher: [
-      "Everything in Full-Stack Plan",
+      "Everything in Standard Plan",
       "Advanced API Integrations",
       "E-commerce Functionality",
       "Ongoing Maintenance",
