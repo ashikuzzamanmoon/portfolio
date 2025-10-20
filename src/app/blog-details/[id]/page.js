@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import Link from "next/link";
 
@@ -8,6 +7,44 @@ import Form from "@/Components/Shared/Form";
 
 import { blogsList } from "@/Utlits/blogList";
 import { socialIcons } from "@/Utlits/socilIcons";
+
+// --- Dynamic Metadata function start ---
+export async function generateMetadata({ params }) {
+  const blog = blogsList.find((b) => b.id === parseInt(params.id));
+  if (!blog) {
+    return {
+      title: "Blog Post Not Found",
+      description: "The blog post you are looking for does not exist.",
+    };
+  }
+  return {
+    title: `${blog.heading} | Ashikuzzaman Moon's Blog`,
+    description: blog.para, // সংক্ষিপ্ত বর্ণনা ব্যবহার করা হয়েছে
+    openGraph: {
+      title: blog.heading,
+      description: blog.para,
+      url: `https://moon-bd.com/blog-details/${blog.id}`,
+      images: [
+        {
+          url: `https://moon-bd.com${blog.image}`, // OG Image-এর জন্য সবসময় Absolute URL ব্যবহার করতে হয়
+          width: 1200,
+          height: 630,
+          alt: blog.heading,
+        },
+      ],
+      type: 'article',
+      publishedTime: new Date().toISOString(), // একটি আনুমানিক সময় দেওয়া হলো
+      authors: ['Ashikuzzaman Moon'],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: blog.heading,
+      description: blog.para,
+      images: [`https://moon-bd.com${blog.image}`],
+    },
+  };
+}
+// --- dynamic Metadata function end ---
 
 const BlogDetailsPage = ({ params }) => {
   // Find the blog based on the id from the URL

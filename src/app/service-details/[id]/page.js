@@ -1,10 +1,46 @@
-"use client";
 import React from "react";
 import { PlayFill, ArrowRight, ChevronRight } from "react-bootstrap-icons";
 import PageHeader from "@/Components/Shared/PageHeader";
 import Accordion from "@/Components/Accordion";
 import Link from "next/link";
 import { serviceData } from "@/Utlits/serviceData";
+
+// --- Dynamic Metadata function start ---
+export async function generateMetadata({ params }) {
+  const service = serviceData.find((s) => s.id === params.id);
+  if (!service) {
+    return {
+      title: "Service Not Found",
+      description: "The service you are looking for does not exist.",
+    };
+  }
+  return {
+    title: `${service.heading} | Services - Ashikuzzaman Moon`,
+    description: service.para,
+    openGraph: {
+      title: `${service.heading} Service`,
+      description: service.para,
+      url: `https://moon-bd.com/service-details/${service.id}`,
+      images: [
+        {
+          url: `https://moon-bd.com${service.details.image1}`, // OG Image-এর জন্য Absolute URL
+          width: 1200,
+          height: 630,
+          alt: service.heading,
+        },
+      ],
+      type: 'website',
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${service.heading} Service`,
+      description: service.para,
+      images: [`https://moon-bd.com${service.details.image1}`],
+    },
+  };
+}
+// --- Dynamic Metadata function end ---
+
 
 const ServiceDetailsPage = ({ params }) => {
   // Find the service based on the id from the URL

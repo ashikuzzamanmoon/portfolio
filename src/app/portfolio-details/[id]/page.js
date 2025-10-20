@@ -1,10 +1,43 @@
-"use client";
 import PageHeader from "@/Components/Shared/PageHeader";
 import RelatedProducts from "@/Components/RelatedProducts";
 import { projectList } from "@/Utlits/projectList";
 import { socialIcons } from "@/Utlits/socilIcons";
 import Link from "next/link";
 import React from "react";
+
+// --- Dynamic Metadata Function ---
+export async function generateMetadata({ params }) {
+  const project = projectList.find((p) => p.id === parseInt(params.id));
+  if (!project) {
+    return {
+      title: "Project Not Found",
+      description: "The project you are looking for does not exist.",
+    };
+  }
+  return {
+    title: `${project.heading} - Ashikuzzaman Moon's Portfolio`,
+    description: project.description,
+    openGraph: {
+      title: `${project.heading} - Project Details`,
+      description: project.description,
+      images: [
+        {
+          url: `https://moon-bd.com${project.image}`, // Always use absolute URL for OG images
+          width: 1200,
+          height: 630,
+          alt: project.heading,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${project.heading} - Project Details`,
+      description: project.description,
+      images: [`https://moon-bd.com${project.image}`],
+    },
+  };
+}
+
 
 const PortfolioDetailsPage = ({ params }) => {
   // Find the project based on the id from the URL
