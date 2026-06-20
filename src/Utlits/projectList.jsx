@@ -217,6 +217,38 @@ export const projectList = [
         "I used a well-tested e-commerce logic for the cart and order management. Although a dummy payment gateway was used for this version, the architecture is ready for integration with real payment processors like Stripe.",
     },
   },
+  {
+    id: 7,
+    image: "/img/project/project7.png",
+    heading: "1Tech",
+    subHeading: "IT Solutions Website",
+    category: ["all", "frontend", "website", "nextjs", "tailwindcss", "typescript"],
+    liveSite: "https://1tech.com.bd/",
+    clientRepo: "#",
+    serverRepo: "#",
+    clientName: "Client Project",
+    projectDate: "2024",
+    description:
+      "A modern and responsive professional website for 1Tech, built with a focus on performance and clean user interface.",
+    detailsImages: [
+      "/img/portfolio/port-details-7-1.png",
+      "/img/portfolio/port-details-7-2.png",
+    ],
+    detailsContent: {
+      objective:
+        "To design and develop a professional online presence for 1Tech.",
+      technologies: ["Next.js", "Tailwind CSS", "TypeScript"],
+      features: [
+        "Fully responsive design.",
+        "Optimized for fast loading times.",
+        "Visually appealing services showcase.",
+      ],
+      challenges:
+        "Delivering a seamless user experience across all devices.",
+      solution:
+        "Utilized modern frontend technologies to ensure a highly responsive and performant website.",
+    },
+  },
 ];
 
 // export const imagesList = [
