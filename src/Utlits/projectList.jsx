@@ -226,8 +226,8 @@ export const projectList = [
     liveSite: "https://1tech.com.bd/",
     clientRepo: "#",
     serverRepo: "#",
-    clientName: "Client Project",
-    projectDate: "2024",
+    clientName: "1Tech",
+    projectDate: "January 2026",
     description:
       "A modern and responsive professional website for 1Tech, built with a focus on performance and clean user interface.",
     detailsImages: [
