@@ -2,6 +2,7 @@ import React from "react";
 import { XLg, ChevronRight } from "react-bootstrap-icons";
 import { socialIcons } from "../../../Utlits/socilIcons";
 import Link from "next/link";
+import Image from "next/image";
 
 const Drawer = ({ isSidebarActive, setIsSidebarActive }) => {
   return (
@@ -19,8 +20,14 @@ const Drawer = ({ isSidebarActive, setIsSidebarActive }) => {
         </i>
       </div>
       <div className="grid py-10 px-5">
-        <Link href={""} className="mb-5">
-          <img src={"/img/logo/logo.png"} alt="img" />
+        <Link href={"/"} className="mb-5 block">
+          <Image
+            src="/img/logo/logo.png"
+            alt="Moon logo"
+            width={120}
+            height={40}
+            className="w-auto h-auto object-contain"
+          />
         </Link>
         <p className="text-sm mb-10 text-clr_pra break-words leading-normal">
           Full-Stack Web Developer with proven experience building dynamic web applications

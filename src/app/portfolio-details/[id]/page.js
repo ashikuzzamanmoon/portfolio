@@ -3,6 +3,7 @@ import RelatedProducts from "@/Components/RelatedProducts";
 import { projectList } from "@/Utlits/projectList";
 import { socialIcons } from "@/Utlits/socilIcons";
 import Link from "next/link";
+import Image from "next/image";
 import React from "react";
 
 // --- Dynamic Metadata Function ---
@@ -55,8 +56,33 @@ const PortfolioDetailsPage = ({ params }) => {
   // Destructure the new details object
   const { detailsContent } = project;
 
+  const projectJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: project.heading,
+    description: project.description,
+    applicationCategory: "WebApplication",
+    operatingSystem: "All",
+    author: {
+      "@type": "Person",
+      name: "Ashikuzzaman Moon",
+      url: "https://moon-bd.com",
+    },
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "USD",
+    },
+    url: project.liveSite !== "#" ? project.liveSite : `https://moon-bd.com/portfolio-details/${project.id}`,
+    image: `https://moon-bd.com${project.image}`,
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(projectJsonLd) }}
+      />
       <PageHeader heading={project.subHeading} page={project.heading} />
       <section className="pb_120">
         <div className="container">
@@ -66,10 +92,13 @@ const PortfolioDetailsPage = ({ params }) => {
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            <img
+            <Image
               src={project.image}
               alt={project.heading}
-              className="w-full rounded-t-lg lg:rounded-lg"
+              width={1200}
+              height={650}
+              priority
+              className="w-full h-auto rounded-t-lg lg:rounded-lg object-cover"
             />
             <div className="bg-[rgb(18_18_18)] rounded-tr-[30px] xl:p-[45px] lg:p-6 py-5 px-[12px] lg:absolute static bottom-0 left-0 w-full lg:w-auto">
               <h3 className="text-white xl:mb-8 mb-6 capitalize sm:text-[32px] text-[26px] leading-[120%] font-semibold">
@@ -232,10 +261,12 @@ const PortfolioDetailsPage = ({ params }) => {
             >
               {project.detailsImages.map((img, index) => (
                 <div className="w-full" key={index}>
-                  <img
+                  <Image
                     src={img}
                     alt={`${project.heading} detail ${index + 1}`}
-                    className="rounded-lg w-full"
+                    width={600}
+                    height={400}
+                    className="rounded-lg w-full h-auto object-cover"
                   />
                 </div>
               ))}

@@ -1,13 +1,15 @@
 'use client'
-import React, { useEffect } from 'react'
-import AOS from "aos";
+import { useEffect } from 'react'
 import "aos/dist/aos.css";
 
 const AddAnimation = () => {
     useEffect(() => {
-        AOS.init();
+        import("aos").then((module) => {
+            const AOS = module.default || module;
+            AOS.init({ once: true });
+        });
     }, []);
-    return null
+    return null;
 }
 
-export default AddAnimation
+export default AddAnimation;

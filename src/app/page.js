@@ -1,16 +1,16 @@
 import React from "react";
-// import { images, images2 } from "../Utlits/marqueeItems";
+import dynamic from "next/dynamic";
 import { marqueeText1, marqueeText2 } from "../Utlits/marqueeItems"; 
 import About from "../Components/About/About";
-import Projects from "../Components/Projects";
-import Metting from "../Components/Metting";
-import Services from "../Components/Services/Services";
-import WorkeProcess from "../Components/WorkeProcess/WorkeProcess";
-import Testimonial from "../Components/Testimonial";
-import Blogs from "../Components/Blogs/Blogs";
-import MarqueeWapper from "../Components/Shared/MarqueeWapper";
-import Awards from "../Components/About/Awards";
 import Skills from "@/Components/About/Skills";
+
+const MarqueeWapper = dynamic(() => import("../Components/Shared/MarqueeWapper"), { ssr: false });
+const Projects = dynamic(() => import("../Components/Projects"));
+const Metting = dynamic(() => import("../Components/Metting"));
+const Services = dynamic(() => import("../Components/Services/Services"));
+const WorkeProcess = dynamic(() => import("../Components/WorkeProcess/WorkeProcess"));
+const Testimonial = dynamic(() => import("../Components/Testimonial"), { ssr: false });
+const Blogs = dynamic(() => import("../Components/Blogs/Blogs"));
 
 
 const Home = () => {

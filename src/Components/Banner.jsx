@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import {
   Facebook,
   Twitter,
@@ -86,7 +87,12 @@ const Banner = () => {
                 </span>
               </h1>
               <div className="flex items-center gap-6">
-                <img src={"/img/banner/bn-arrow.png"} alt="img" />
+                <Image
+                  src="/img/banner/bn-arrow.png"
+                  alt="arrow"
+                  width={60}
+                  height={24}
+                />
                 <div
                   onClick={handleScrollToProjects}
                   className="cursor-pointer relative xl:w-20 xl:h-20 sm:w-[60px] sm:h-[60px] w-[50px] h-[50px] flex justify-center items-center rounded-full border border-clr_white before:absolute before:border-2 before:border-clr_white before:w-full before:h-full before:content:[''] before:rounded-full before:animate-scales  "
@@ -107,10 +113,13 @@ const Banner = () => {
                 position ? "right_up_animat" : "right_up"
               }`}
             >
-              <img
-                src={"/img/banner/banner-man.png"}
-                alt="man-img"
-                className="w-full"
+              <Image
+                src="/img/banner/banner-man.png"
+                alt="Ashikuzzaman Moon"
+                width={700}
+                height={850}
+                priority
+                className="w-full h-auto object-contain"
               />
             </div>
           </div>
@@ -119,10 +128,12 @@ const Banner = () => {
       <div className="hidden absolute -left-[40px] top-1/2 -translate-y-1/2 xl:grid gap-[220px] ">
         <div className="rotate-90 flex items-center justify-center gap-[16px] ">
           <Link href={"#"}>
-            <img
-              src={"/img/banner/dial.png"}
-              alt="img"
-              className="-rotate-90 w-4"
+            <Image
+              src="/img/banner/dial.png"
+              alt="phone"
+              width={16}
+              height={16}
+              className="-rotate-90 w-4 h-auto"
             />
           </Link>
           <Link href={"tel:+8801712714334"} className="text-clr_white">
@@ -137,10 +148,12 @@ const Banner = () => {
             scroll down
           </Link>
           <Link href={"#"} className="-rotate-90">
-            <img
-              src={"/img/banner/scroll-down.png"}
-              alt="img"
-              className="w-5"
+            <Image
+              src="/img/banner/scroll-down.png"
+              alt="scroll down"
+              width={20}
+              height={20}
+              className="w-5 h-auto"
             />
           </Link>
         </div>
@@ -151,10 +164,12 @@ const Banner = () => {
             Follow Me
           </span>
           <span className="-rotate-90">
-            <img
-              src={"/img/banner/scroll-down.png"}
-              alt="img"
-              className="w-5"
+            <Image
+              src="/img/banner/scroll-down.png"
+              alt="scroll down"
+              width={20}
+              height={20}
+              className="w-5 h-auto"
             />
           </span>
         </div>

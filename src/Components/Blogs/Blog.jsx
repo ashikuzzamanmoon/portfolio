@@ -1,8 +1,10 @@
 'use client'
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
+import dynamic from "next/dynamic";
 import { Eye } from "react-bootstrap-icons";
-import Lightbox from "../Shared/LightBox";
+const Lightbox = dynamic(() => import("../Shared/LightBox"), { ssr: false });
 import { blogsList } from "@/Utlits/blogList";
 
 const Blog = ({ id, date, heading, image, index }) => {
@@ -38,11 +40,13 @@ const Blog = ({ id, date, heading, image, index }) => {
             </div>
           </div>
           <div className="duration-500 md:opacity-0 opacity-100 group-hover:opacity-100">
-            <img
+            <Image
               src={image}
-              alt="img-opa "
+              alt={heading}
+              width={290}
+              height={157}
               onClick={() => openLightbox(index)}
-              className="max-w-[290px] h-[157px] cursor-pointer"
+              className="max-w-[290px] h-[157px] object-cover cursor-pointer rounded-md"
             />
           </div>
         </div>

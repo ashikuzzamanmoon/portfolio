@@ -1,8 +1,9 @@
 "use client";
 import React, { useState } from "react";
 import Title from "./Shared/Title";
+import dynamic from "next/dynamic";
 import { projectList, imagesList } from "@/Utlits/projectList";
-import Lightbox from "./Shared/LightBox";
+const Lightbox = dynamic(() => import("./Shared/LightBox"), { ssr: false });
 import ProjectCard from "./Shared/ProjectCard";
 
 const RelatedProducts = ({currentProjectId}) => {

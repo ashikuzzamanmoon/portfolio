@@ -2,6 +2,7 @@ import React from "react";
 import PageHeader from "../../Components/Shared/PageHeader";
 import Form from "../../Components/Shared/Form";
 import Link from "next/link";
+import CopyButton from "../../Components/Shared/CopyButton";
 
 const Contact = () => {
   return (
@@ -28,23 +29,29 @@ const Contact = () => {
                   Feel free to contact me anytime
                 </h4>
                 <div className="lg:mb-5 mb-4 rounded-[10px] bg-[rgb(29_29_29)] xl:p-[30px] p-4">
-                  <span className="mb-[14px] block text-clr_pra capitalize">
-                    Email
-                  </span>
+                  <div className="flex items-center justify-between mb-[14px]">
+                    <span className="block text-clr_pra capitalize">
+                      Email
+                    </span>
+                    <CopyButton text="ashikuzzamanmoon31@gmail.com" label="Copy" />
+                  </div>
                   <Link
                     href={"mailto:ashikuzzamanmoon31@gmail.com"}
-                    className="text-white xl:text-xl text-base block"
+                    className="text-white xl:text-xl text-base block hover:text-clr_base transition-colors break-all"
                   >
                     ashikuzzamanmoon31@gmail.com
                   </Link>
                 </div>
                 <div className="lg:mb-5 mb-4 rounded-[10px] bg-[rgb(29_29_29)] xl:p-[30px] p-4">
-                  <span className="mb-[14px] block text-clr_pra capitalize">
-                    WhatsApp
-                  </span>
+                  <div className="flex items-center justify-between mb-[14px]">
+                    <span className="block text-clr_pra capitalize">
+                      WhatsApp
+                    </span>
+                    <CopyButton text="+8801712714334" label="Copy" />
+                  </div>
                   <Link
                     href={"https://wa.me/8801712714334"} target="_blank"
-                    className="text-white xl:text-xl text-base block capitalize"
+                    className="text-white xl:text-xl text-base block capitalize hover:text-clr_base transition-colors"
                   >
                     +88 01712714334
                   </Link>

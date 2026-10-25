@@ -1,5 +1,6 @@
 'use client'
 import React from "react";
+import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -54,7 +55,13 @@ const Partner = () => {
                     key={id}
                     className="swiper-slide text-center flex justify-center relative"
                   >
-                    <img src={image} alt="img" />
+                    <Image
+                      src={image}
+                      alt="partner logo"
+                      width={120}
+                      height={60}
+                      className="w-auto h-auto max-h-[60px] object-contain"
+                    />
                   </div>
                 </SwiperSlide>
               );

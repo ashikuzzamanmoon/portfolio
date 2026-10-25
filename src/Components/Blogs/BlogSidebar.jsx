@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { ChevronRight, Clock, Search } from "react-bootstrap-icons";
 import { blogsList } from "@/Utlits/blogList";
 
@@ -76,7 +77,13 @@ const BlogSidebar = () => {
                 href={`/blog-details/${id}`}
                 className="flex items-center flex-wrap xl:flex-nowrap xl:gap-5 gap-[10px] group"
               >
-                <img src={image} alt={heading} className="w-20 h-20 object-cover rounded-md"/>
+                <Image
+                  src={image}
+                  alt={heading}
+                  width={80}
+                  height={80}
+                  className="w-20 h-20 object-cover rounded-md"
+                />
                 <div>
                   <span className="text-white text-lg font-medium mb-[14px] block group-hover:text-clr_base duration-300">
                     {heading}

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 import { ArrowRight } from "react-bootstrap-icons";
 
 const BlogCard = ({ id, heading, para, image, date }) => {
@@ -10,10 +11,12 @@ const BlogCard = ({ id, heading, para, image, date }) => {
       data-aos-duration="1000"
     >
       <Link href={`/blog-details/${id}`} className="overflow-hidden block">
-        <img
+        <Image
           src={image}
-          alt="img"
-          className="w-full overflow-hidden duration-500 group-hover:scale-105"
+          alt={heading}
+          width={600}
+          height={380}
+          className="w-full h-auto overflow-hidden duration-500 group-hover:scale-105 rounded-lg object-cover"
         />
       </Link>
       <div className="w-[90%] bg-clr_body rounded-tr-lg py-[30px] pr-[14px] pl-5 -translate-y-[70px] -mb-[70px]">

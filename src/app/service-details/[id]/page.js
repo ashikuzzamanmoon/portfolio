@@ -3,6 +3,7 @@ import { PlayFill, ArrowRight, ChevronRight } from "react-bootstrap-icons";
 import PageHeader from "@/Components/Shared/PageHeader";
 import Accordion from "@/Components/Accordion";
 import Link from "next/link";
+import Image from "next/image";
 import { serviceData } from "@/Utlits/serviceData";
 
 // --- Dynamic Metadata function start ---
@@ -67,7 +68,14 @@ const ServiceDetailsPage = ({ params }) => {
             <div>
               <div>
                 <div className="w-full mb-[60px]">
-                  <img src={details.image1} alt={service.heading} className="w-full rounded-lg" />
+                  <Image
+                    src={details.image1}
+                    alt={service.heading}
+                    width={900}
+                    height={500}
+                    priority
+                    className="w-full h-auto rounded-lg object-cover"
+                  />
                 </div>
                 <div
                   className="xl:mb-[60px] mb-10 "
@@ -97,7 +105,13 @@ const ServiceDetailsPage = ({ params }) => {
                   </p>
                 </div>
                 <div className="relative w-full mb-[60px] before:absolute before:w-full before:h-full before:inset-0 before:content-[''] before:rounded-[10px] before:bg-[rgb(12_12_12)] before:bg-opacity-60">
-                  <img src={details.image2} alt="Service process" className="rounded-[10px] w-full" />
+                  <Image
+                    src={details.image2}
+                    alt="Service process"
+                    width={900}
+                    height={500}
+                    className="rounded-[10px] w-full h-auto object-cover"
+                  />
                   <Link
                     href={details.videoLink || "#"}
                     target="_blank"
@@ -152,10 +166,12 @@ const ServiceDetailsPage = ({ params }) => {
                 </div>
                 <div className="lg:mb-[30px] mb-5 xl:p-[30px] p-5 border border-clr_cusborder rounded-lg">
                   <div className="relative w-full before:absolute before:w-full before:h-full before:inset-0 before:content-[''] before:rounded-[10px] before:bg-[rgb(12_12_12)] before:opacity-60">
-                    <img
-                      src={"/img/contact/ser-detialcontact.png"}
+                    <Image
+                      src="/img/contact/ser-detialcontact.png"
                       alt="Contact me"
-                      className="w-full"
+                      width={400}
+                      height={300}
+                      className="w-full h-auto rounded-[10px] object-cover"
                     />
                     <Link
                       href={"/contact"}

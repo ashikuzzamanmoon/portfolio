@@ -1,7 +1,9 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Envelope, GeoAlt } from "react-bootstrap-icons";
 import TitleSecond from "./Shared/TitleSecond";
+import CopyButton from "./Shared/CopyButton";
 
 const Metting = () => {
   return (
@@ -21,20 +23,21 @@ const Metting = () => {
                 data-aos="fade-up"
                 data-aos-duration="1000"
               >
-                <span className="w-[60px] h-[60px] rounded-full bg-clr_base flex justify-center items-center">
+                <span className="w-[60px] h-[60px] rounded-full bg-clr_base flex justify-center items-center shrink-0">
                   <Envelope className="text-[26px] text-clr_title" />
                 </span>
-                <span>
-                  <span className="text-clr_pra md:text-lg text-base mb-1 block">
-                    {" "}
-                    Email{" "}
-                  </span>
+                <span className="flex-1">
+                  <div className="flex items-center gap-3 mb-1">
+                    <span className="text-clr_pra md:text-lg text-base block">
+                      Email
+                    </span>
+                    <CopyButton text="ashikuzzamanmoon31@gmail.com" label="Copy" />
+                  </div>
                   <Link
                     href={"mailto:ashikuzzamanmoon31@gmail.com"}
-                    className="text-white md:text-xl text-base font-medium"
+                    className="text-white md:text-xl text-base font-medium hover:text-clr_base transition-colors break-all"
                   >
-                    {" "}
-                    ashikuzzamanmoon31@gmail.com{" "}
+                    ashikuzzamanmoon31@gmail.com
                   </Link>
                 </span>
               </div>
@@ -67,7 +70,13 @@ const Metting = () => {
               data-aos="zoom-in"
               data-aos-duration="2000"
             >
-              <img src={"/img/project/project-need.png"} alt="img" />
+              <Image
+                src="/img/project/project-need.png"
+                alt="Project discussion illustration"
+                width={500}
+                height={400}
+                className="w-full h-auto object-contain"
+              />
             </div>
           </div>
         </div>

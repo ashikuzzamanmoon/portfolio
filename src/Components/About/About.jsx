@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
 import Experience from "./Experience";
 import Education from "./Education";
 import AboutMe from "./AboutMe";
@@ -34,9 +35,11 @@ const About = () => {
       <section className="pt_120 pb_120" id="about">
         <div className="container">
           <div className="text-center mx-auto xl:mb-[60px] md:mb-[50px] mb-[30px]">
-            <img
-              src={"/img/about/section-star.png"}
-              className="mb-[30px] animate-spin mx-auto"
+            <Image
+              src="/img/about/section-star.png"
+              width={60}
+              height={60}
+              className="mb-[30px] animate-spin mx-auto w-auto h-auto"
               alt="star"
               data-aos="fade-up"
               data-aos-duration="1000"

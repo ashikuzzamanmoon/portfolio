@@ -8,6 +8,7 @@ import {
   Github,
 } from "react-bootstrap-icons";
 import Link from "next/link";
+import Image from "next/image";
 
 const contactInfo = [
   {
@@ -77,10 +78,12 @@ const AboutMe = ({ isTabActive }) => {
         <div className="grid lg:grid-cols-[41%_auto] gap-6 lg:items-start align-items-center">
           <div>
             <div className="w-full" data-aos="zoom-in" data-aos-duration="500">
-              <img
-                src={"/img/about/personal-infothumb.png"}
-                alt="img"
-                className="w-full"
+              <Image
+                src="/img/about/personal-infothumb.png"
+                alt="Personal info thumbnail"
+                width={450}
+                height={500}
+                className="w-full h-auto rounded-lg object-cover"
               />
             </div>
           </div>

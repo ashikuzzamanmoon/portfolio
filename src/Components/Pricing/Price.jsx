@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 import { ArrowRight } from "react-bootstrap-icons";
 
 const Price = ({ image, planName, price, time, fetcher, id }) => {
@@ -15,7 +16,13 @@ const Price = ({ image, planName, price, time, fetcher, id }) => {
             id === 2 ? "bg-clr_title" : "bg-clr_base"
           }  mb-10`}
         >
-          <img src={image} alt="img" />
+          <Image
+            src={image}
+            alt={planName}
+            width={45}
+            height={45}
+            className="w-auto h-auto object-contain"
+          />
         </div>
         <h4 className="text-white lg:mb-6 mb-4 text-2xl font-semibold">
           {planName}

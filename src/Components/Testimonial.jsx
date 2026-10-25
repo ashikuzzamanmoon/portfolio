@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import Partner from "./Partner";
 import Rating from "./Shared/Rating";
 
@@ -106,31 +107,47 @@ const Testimonial = () => {
             </div>
           </div>
           <div className="absolute top-[99px] xl:left-[291px] lg:left-60 lg:block hidden">
-            <img src={"/img/testimonial/quote.png"} alt="img" />
+            <Image
+              src="/img/testimonial/quote.png"
+              alt="quote"
+              width={50}
+              height={50}
+            />
           </div>
           <div className="absolute top-5 left-5 opacity-10 lg:opacity-100 w-[60px] sm:w-auto">
-            <img
-              src={"/img/testimonial/man1.png"}
-              alt="img"
-              className="w-full sm:w-auto"
+            <Image
+              src="/img/testimonial/man1.png"
+              alt="client avatar"
+              width={70}
+              height={70}
+              className="w-full sm:w-auto rounded-full"
             />
           </div>
           <div className="absolute left-5 bottom-5 opacity-10 lg:opacity-100 w-[60px] sm:w-auto">
-            <img
-              src={"/img/testimonial/man3.png"}
-              alt="img"
-              className="w-full sm:w-auto"
+            <Image
+              src="/img/testimonial/man3.png"
+              alt="client avatar"
+              width={70}
+              height={70}
+              className="w-full sm:w-auto rounded-full"
             />
           </div>
           <div className="absolute top-5 right-5 opacity-10 lg:opacity-100 w-[60px] sm:w-auto">
-            <img
-              src={"/img/testimonial/man2.png"}
-              alt="img"
-              className="w-full sm:w-auto"
+            <Image
+              src="/img/testimonial/man2.png"
+              alt="client avatar"
+              width={70}
+              height={70}
+              className="w-full sm:w-auto rounded-full"
             />
           </div>
           <div className="absolute lg:bottom-[50px] lg:right-[50px] bottom-[15px] right-[15px] sm:block hidden ">
-            <img src={"/img/testimonial/testi-arrow.png"} alt="img" />
+            <Image
+              src="/img/testimonial/testi-arrow.png"
+              alt="arrow"
+              width={60}
+              height={60}
+            />
           </div>
         </div>
         {/* <Partner /> */}

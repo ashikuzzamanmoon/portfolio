@@ -1,7 +1,8 @@
 'use client'
 import React, { useState } from "react";
+import dynamic from "next/dynamic";
 import Title from "./Shared/Title";
-import Lightbox from "./Shared/LightBox";
+const Lightbox = dynamic(() => import("./Shared/LightBox"), { ssr: false });
 import ProjectCard from "./Shared/ProjectCard";
 import { imagesList, projectList } from "../Utlits/projectList";
 import CircleBox from "./Shared/CircleBox";

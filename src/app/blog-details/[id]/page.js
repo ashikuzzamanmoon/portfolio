@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 import PageHeader from "@/Components/Shared/PageHeader";
 import BlogSidebar from "@/Components/Blogs/BlogSidebar";
@@ -71,10 +72,13 @@ const BlogDetailsPage = ({ params }) => {
               <div>
                 <div data-aos="fade-up" data-aos-duration="1000">
                   <div className="overflow-hidden block w-full rounded-lg">
-                    <img
+                    <Image
                       src={details.mainImage}
                       alt={blog.heading}
-                      className="w-full overflow-hidden duration-500"
+                      width={1000}
+                      height={500}
+                      priority
+                      className="w-full h-auto overflow-hidden duration-500 rounded-lg object-cover"
                     />
                   </div>
                   <div className="py-[30px]">
@@ -95,10 +99,12 @@ const BlogDetailsPage = ({ params }) => {
                       </p>
                     </div>
                     <div className="lg:mb-[30px] mb-5 bg-clr_base rounded-lg lg:p-[30px] p-5">
-                      <img
-                        src={"/img/blog/straight-quotes.png"}
+                      <Image
+                        src="/img/blog/straight-quotes.png"
                         alt="quote"
-                        className="mb-[30px]"
+                        width={40}
+                        height={40}
+                        className="mb-[30px] w-auto h-auto"
                       />
                       <p className="text-xl text-clr_title mb-9 italic">
                         "{details.quote}"
@@ -114,7 +120,13 @@ const BlogDetailsPage = ({ params }) => {
                       {details.subheading}
                     </h3>
                     <div className="lg:mb-[30px] mb-5">
-                      <img src={details.subImage} alt="blog detail" className="rounded-lg"/>
+                      <Image
+                        src={details.subImage}
+                        alt="blog detail"
+                        width={800}
+                        height={450}
+                        className="rounded-lg w-full h-auto object-cover"
+                      />
                     </div>
                    
                     <div

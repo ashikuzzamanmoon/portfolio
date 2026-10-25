@@ -1,6 +1,7 @@
 'use client'
 import React, { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { List, ArrowRight, X } from "react-bootstrap-icons";
 import Drawer from "./Drawer";
 import { menuList } from "@/Utlits/menuList";
@@ -39,10 +40,13 @@ const RanderHeader = () => {
         <div className="flex justify-between items-center w-full relative py-5">
           <div className="main__logo">
             <Link href={"/"} className="block xl:w-[150px] w-[100px]">
-              <img
-                src={"/img/logo/logo.png"}
-                alt="logo"
-                className="w-full h-full object-contain"
+              <Image
+                src="/img/logo/logo.png"
+                alt="Moon logo"
+                width={150}
+                height={50}
+                priority
+                className="w-full h-auto object-contain"
               />
             </Link>
           </div>

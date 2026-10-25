@@ -2,6 +2,7 @@ import "./globals.css";
 import AddAnimation from "@/Components/Shared/AddAnimation";
 import Footer from "@/Components/Shared/Footer";
 import Header from "@/Components/Shared/Header/Header";
+import CursorGlow from "@/Components/Shared/CursorGlow";
 
 // --- SEO Metadata start ---
 const title = "Ashikuzzaman Moon - Full-Stack Web Developer";
@@ -69,10 +70,46 @@ export const metadata = {
 };
 // --- SEO Metadata End ---
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Ashikuzzaman Moon",
+  alternateName: "Moon",
+  url: url,
+  image: imageUrl,
+  jobTitle: "Full-Stack Web Developer",
+  sameAs: [
+    "https://github.com/ashikuzzamanmoon",
+    "https://www.linkedin.com/in/ashikuzzaman-moon",
+    "https://www.facebook.com/ashikuzzaman.moon1",
+    "https://x.com/ashikmoon01",
+  ],
+  knowsAbout: [
+    "JavaScript",
+    "TypeScript",
+    "React.js",
+    "Next.js",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "Tailwind CSS",
+    "Redux Toolkit",
+    "REST APIs",
+    "Full-Stack Web Applications",
+  ],
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body>
+        <CursorGlow/>
         <AddAnimation/>
         <Header/>
         {children}
