@@ -5,33 +5,33 @@ import Title from "../Shared/Title";
 const serviceList = [
   {
     id: "01",
-    heading: "Full-Stack Development",
+    heading: "Full-Stack Web Applications",
     subHeading: "End-to-End Solutions",
-    para: "Building complete, scalable web applications from the ground up, covering both responsive front-end and robust back-end.",
+    para: "Complete apps from idea to deployment: responsive front-end, robust back-end, database and auth.",
   },
   {
     id: "02",
-    heading: "Frontend Development",
-    subHeading: "Interactive User Interfaces",
-    para: "Crafting beautiful and dynamic user interfaces with modern technologies like React.js and Next.js for a seamless user experience.",
+    heading: "eCommerce Development",
+    subHeading: "Fast & Scalable Storefronts",
+    para: "Fast, SEO-friendly storefronts with Next.js: search, product comparison, dashboards and checkout-ready architecture.",
   },
   {
     id: "03",
-    heading: "Backend & API Development",
-    subHeading: "Robust Server-Side Logic",
-    para: "Developing secure RESTful APIs and efficient server-side logic using Node.js, Express.js, and modern databases.",
+    heading: "Front-End Development",
+    subHeading: "Interactive User Interfaces",
+    para: "Modern, dynamic interfaces with React.js and Next.js for a seamless user experience.",
   },
   {
     id: "04",
-    heading: "WordPress Development",
-    subHeading: "Custom Themes & Pages",
-    para: "Creating custom WordPress themes and high-converting landing pages tailored to your specific business needs and brand identity.",
+    heading: "Back-End & APIs",
+    subHeading: "Robust Server-Side Logic",
+    para: "Secure RESTful APIs and server-side logic with Node.js, Express.js and MongoDB / PostgreSQL.",
   },
   {
     id: "05",
-    heading: "Website Maintenance",
-    subHeading: "Ongoing Support",
-    para: "Providing continuous support, bug fixes, and feature enhancements to ensure your website remains up-to-date and runs smoothly.",
+    heading: "Maintenance & Support",
+    subHeading: "Ongoing Support & Updates",
+    para: "Bug fixes, performance improvements and feature updates to keep your site fast and up to date.",
   },
 ];
 
