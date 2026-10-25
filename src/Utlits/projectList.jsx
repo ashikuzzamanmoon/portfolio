@@ -2,92 +2,6 @@ export const projectList = [
   {
     id: 1,
     image: "/img/project/project1.png",
-    heading: "School Management System",
-    subHeading: "Role-Based Academic & Management Platform",
-    category: ["all", "fullstack", "frontend", "backend"],
-    liveSite: "https://github.com/ashikuzzaman-moon",
-    clientRepo: "https://github.com/ashikuzzaman-moon",
-    serverRepo: "https://github.com/ashikuzzaman-moon",
-    clientName: "Featured Project",
-    projectDate: "2024",
-    description:
-      "A role-based platform with dedicated dashboards for Admins, SuperAdmins and Students — academic structure, fees, results, progress tracking and study materials, with permission-gated routes and JWT auth.",
-    detailsImages: [
-      "/img/portfolio/port-details-1-1.png",
-      "/img/portfolio/port-details-1-2.png",
-    ],
-    detailsContent: {
-      objective:
-        "Institutions manage academics, fees and results across disconnected tools. The objective was to build a unified role-based platform that centralizes institutional workflows, academic progress, and financial transactions into an integrated system.",
-      technologies: [
-        "React.js",
-        "TypeScript",
-        "Redux Toolkit",
-        "Tailwind CSS",
-        "Node.js",
-        "Express.js",
-        "MongoDB",
-        "JWT",
-      ],
-      features: [
-        "Dedicated role-based dashboards for SuperAdmins, Admins, and Students.",
-        "Complete academic structure setup, curriculum management, and scheduling.",
-        "Automated fees tracking, invoice generation, and financial accounting.",
-        "Examinations, grading systems, and real-time student result publication.",
-        "Student progress monitoring and centralized digital study materials distribution.",
-        "Granular permission-gated routes and secure JWT authentication.",
-      ],
-      challenges:
-        "Institutions manage academics, fees and results across disconnected tools, leading to communication silos, data synchronization headaches, and complex authorization requirements across administrative tiers.",
-      solution:
-        "Architected a full-stack MERN application leveraging TypeScript and Redux Toolkit for state predictability, combined with modular Express.js role-based middleware and JWT token verification to enforce strict permission boundaries.",
-    },
-  },
-  {
-    id: 2,
-    image: "/img/project/project7.png",
-    heading: "OneTech",
-    subHeading: "High-Performance eCommerce Storefront",
-    category: ["all", "fullstack", "frontend", "ecommerce", "website"],
-    liveSite: "https://1tech.com.bd/",
-    clientRepo: "https://github.com/ashikuzzaman-moon",
-    serverRepo: "#",
-    clientName: "1Tech",
-    projectDate: "January 2026",
-    description:
-      "A high-performance eCommerce storefront with typo-tolerant intelligent search, a product comparison tool and a personalized dashboard — built for search visibility with JSON-LD and ISR.",
-    detailsImages: [
-      "/img/portfolio/port-details-7-1.png",
-      "/img/portfolio/port-details-7-2.png",
-    ],
-    detailsContent: {
-      objective:
-        "Tech buyers struggle to find and compare products quickly. OneTech was engineered to deliver an ultra-fast, SEO-optimized tech shopping destination with intelligent search and seamless side-by-side product comparisons.",
-      technologies: [
-        "Next.js (App Router)",
-        "Redux Toolkit",
-        "Tailwind CSS v4",
-        "Shadcn UI",
-        "React Hook Form",
-        "JWT",
-      ],
-      features: [
-        "Typo-tolerant intelligent search enabling instant product discovery even with misspellings.",
-        "Interactive multi-product comparison tool highlighting key technical specifications.",
-        "Personalized customer dashboards with order histories and wishlist management.",
-        "Optimized search engine visibility powered by structured JSON-LD data and Next.js ISR.",
-        "High-converting, responsive UI built with Tailwind CSS v4 and Shadcn UI.",
-        "Checkout-ready architecture with secure JWT authentication and form validation.",
-      ],
-      challenges:
-        "Tech buyers struggle to find and compare products quickly across large inventories, while standard eCommerce platforms often battle slow client-side filtering and poor SEO indexing on dynamic product catalogs.",
-      solution:
-        "Implemented Next.js App Router with Incremental Static Regeneration (ISR) for sub-second page loads, integrated fuzzy search algorithms for typo-tolerant product queries, and added rich JSON-LD schema to maximize organic search rankings.",
-    },
-  },
-  {
-    id: 3,
-    image: "/img/project/project3.png",
     heading: "Travel Buddy",
     subHeading: "Full-Stack Travel Planning Platform",
     category: ["all", "fullstack", "frontend", "backend"],
@@ -127,8 +41,8 @@ export const projectList = [
     },
   },
   {
-    id: 4,
-    image: "/img/project/project4.png",
+    id: 2,
+    image: "/img/project/project3.png",
     heading: "Chitro Golpo",
     subHeading: "E-Learning Platform for Photographers",
     category: ["all", "fullstack", "frontend", "backend"],
@@ -169,7 +83,7 @@ export const projectList = [
     },
   },
   {
-    id: 5,
+    id: 3,
     image: "/img/project/project5.png",
     heading: "Digital Angan",
     subHeading: "WordPress ecommerce landing page",
@@ -182,8 +96,8 @@ export const projectList = [
       "landing_page",
     ],
     liveSite: "https://digitalangan.com",
-    clientRepo: "#",
-    serverRepo: "#",
+    clientRepo: "#", // Not applicable for WordPress theme dev
+    serverRepo: "#", // Not applicable for WordPress theme dev
     clientName: "Personal Project",
     projectDate: "August 2023",
     description:
@@ -208,14 +122,14 @@ export const projectList = [
     },
   },
   {
-    id: 6,
-    image: "/img/project/project6.png",
+    id: 4,
+    image: "/img/project/project2.png",
     heading: "Shajgoj Clone",
     subHeading: "Frontend E-commerce Project",
     category: ["all", "frontend", "website", "ecommerce"],
     liveSite: "https://shajgoj.vercel.app",
-    clientRepo: "#",
-    serverRepo: "#",
+    clientRepo: "#", // Add client repo link if available
+    serverRepo: "#", // Not applicable
     clientName: "Practice Project",
     projectDate: "July 2023",
     description:
@@ -240,14 +154,14 @@ export const projectList = [
     },
   },
   {
-    id: 7,
-    image: "/img/project/project2.png",
+    id: 5,
+    image: "/img/project/project4.png",
     heading: "Sundora Clone",
     subHeading: "Frontend E-commerce Project",
     category: ["all", "frontend", "website", "ecommerce"],
     liveSite: "https://sundora.vercel.app",
-    clientRepo: "#",
-    serverRepo: "#",
+    clientRepo: "#", // Add client repo link if available
+    serverRepo: "#", // Not applicable
     clientName: "Practice Project",
     projectDate: "June 2023",
     description:
@@ -272,21 +186,21 @@ export const projectList = [
     },
   },
   {
-    id: 8,
-    image: "/img/project/project4.png",
+    id: 6,
+    image: "/img/project/project6.png",
     heading: "Mobile Expo",
     subHeading: "E-commerce Mobile App",
     category: ["all", "frontend", "website", "ecommerce"],
     liveSite: "#",
-    clientRepo: "#",
-    serverRepo: "#",
+    clientRepo: "#", // Add client repo link if available
+    serverRepo: "#", // Add client repo link if available
     clientName: "Client Project",
     projectDate: "May 2023",
     description:
       "A fully functional e-commerce application for a mobile phone shop, featuring product listings, a shopping cart, and a checkout process. Built with a focus on user experience.",
     detailsImages: [
       "/img/portfolio/port-details-6-1.png",
-      "/img/portfolio/port-details-6-2.png",
+      "/img/portfolio/port-details-6-1.png",
     ],
     detailsContent: {
       objective:
@@ -303,6 +217,47 @@ export const projectList = [
         "I used a well-tested e-commerce logic for the cart and order management. Although a dummy payment gateway was used for this version, the architecture is ready for integration with real payment processors like Stripe.",
     },
   },
+  {
+    id: 7,
+    image: "/img/project/project7.png",
+    heading: "1Tech",
+    subHeading: "IT Solutions Website",
+    category: ["all", "frontend", "website", "nextjs", "tailwindcss", "typescript"],
+    liveSite: "https://1tech.com.bd/",
+    clientRepo: "#",
+    serverRepo: "#",
+    clientName: "1Tech",
+    projectDate: "January 2026",
+    description:
+      "A modern and responsive professional website for 1Tech, built with a focus on performance and clean user interface.",
+    detailsImages: [
+      "/img/portfolio/port-details-7-1.png",
+      "/img/portfolio/port-details-7-2.png",
+    ],
+    detailsContent: {
+      objective:
+        "To design and develop a professional online presence for 1Tech.",
+      technologies: ["Next.js", "Tailwind CSS", "TypeScript"],
+      features: [
+        "Fully responsive design.",
+        "Optimized for fast loading times.",
+        "Visually appealing services showcase.",
+      ],
+      challenges:
+        "Delivering a seamless user experience across all devices.",
+      solution:
+        "Utilized modern frontend technologies to ensure a highly responsive and performant website.",
+    },
+  },
 ];
+
+// export const imagesList = [
+//   "/img/project/pro1.png",
+//   "/img/project/pro3.png",
+//   "/img/project/pro5.png",
+//   "/img/project/pro2.png",
+//   "/img/project/pro4.png",
+//   "/img/project/pro6.png",
+// ];
 
 export const imagesList = projectList.map((p) => p.image);
